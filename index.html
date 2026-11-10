@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytical Administration Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="light">
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">Progree<span>Admin</span></div>
+      <nav class="sidebar-nav">
+        <a href="#/dashboard" data-route="dashboard">
+          <span class="nav-icon" aria-hidden="true">◧</span> Dashboard
+        </a>
+        <a href="#/records" data-route="records">
+          <span class="nav-icon" aria-hidden="true">≡</span> Employee Records
+        </a>
+        <a href="#/settings" data-route="settings">
+          <span class="nav-icon" aria-hidden="true">⚙</span> Settings
+        </a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" type="button">
+        <span id="themeToggleLabel">Dark mode</span>
+      </button>
+    </aside>
+
+    <main class="main-view">
+      <header class="topbar">
+        <h1 id="viewTitle">Dashboard</h1>
+      </header>
+
+      <div id="viewRoot" class="view-root">
+        <!-- Views are rendered here by app.js -->
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
